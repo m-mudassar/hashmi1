@@ -17,12 +17,12 @@ import Orders from './Orders';
 
 
 function Dashboard() {
-    const [tab, setTab] = useState('addMadicine')
+    const [tab, setTab] = useState('addmadicine')
     console.log(tab);
     return (
         <div className='flex flex-row'>
             <div className='flex flex-col h-screen bottom-0 p-2 max-w-[200px]
-       text-white bg-indigo-600 xl:min-w-[300px] overflow-scroll no-scrollbar'>
+       text-white bg-green-600 xl:min-w-[300px] overflow-scroll no-scrollbar'>
                 <SidebarRow Icon={CollectionIcon} title="AddMadicine" tab={tab} setTab={setTab} />
                 <SidebarRow Icon={BookOpenIcon} title="ShowOrders" tab={tab} setTab={setTab} />
                 {/* <SidebarRow Icon={ViewBoardsIcon} title="Recommended Books" tab={tab} setTab={setTab} />
@@ -34,7 +34,7 @@ function Dashboard() {
                 <SidebarRow Icon={ClipboardIcon} title="Finalterm Past Papers" tab={tab} setTab={setTab} /> */}
             </div>
 
-            <div>
+            <div className='w-screen h-screen'>
                 {
                     renderComponent(tab)
                 }

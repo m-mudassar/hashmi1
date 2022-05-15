@@ -8,7 +8,7 @@ import Register from '../components/Register'
 
 const Home: NextPage = () => {
   const [page, setPage] = useState('login');
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <div className='bg-gradient-to-r from-purple-500 to-pink-500'>
